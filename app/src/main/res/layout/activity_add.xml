@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:ctc="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddActivity"
+    android:background="@color/fern">
+
+    <Button
+        android:id="@+id/button_date_add"
+        android:layout_width="103dp"
+        android:layout_height="48dp"
+        android:fontFamily="monospace"
+        android:insetTop="0dp"
+        android:insetBottom="0dp"
+        android:text="Select Date"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:backgroundTint="@color/dark_green"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.097"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.592" />
+
+    <TextView
+        android:id="@+id/textview_date_add"
+        android:layout_width="230dp"
+        android:layout_height="44dp"
+        android:text="Date"
+        android:textAlignment="center"
+        android:textColor="@color/grey"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.375"
+        app:layout_constraintStart_toEndOf="@+id/button_date_add"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.589" />
+
+    <EditText
+        android:id="@+id/textEdit_issue_add"
+        android:layout_width="289dp"
+        android:layout_height="57dp"
+        android:ems="10"
+        android:inputType="textShortMessage"
+        android:text="Enter issue"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.7"
+        android:backgroundTint="@android:color/darker_gray"
+        android:textColor="@color/grey"/>
+
+    <ImageView
+        android:id="@+id/imageView_colorMap_add"
+        android:layout_width="351dp"
+        android:layout_height="346dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.083"
+        android:visibility="invisible"
+        ctc:srcCompat="@drawable/iir_add_colormap" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraint_place_add"
+        android:layout_width="351dp"
+        android:layout_height="346dp"
+        ctc:layout_constraintBottom_toBottomOf="parent"
+        ctc:layout_constraintEnd_toEndOf="parent"
+        ctc:layout_constraintHorizontal_bias="0.493"
+        ctc:layout_constraintStart_toStartOf="parent"
+        ctc:layout_constraintTop_toTopOf="parent"
+        ctc:layout_constraintVertical_bias="0.083">
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <EditText
+        android:id="@+id/textEdit_description_add"
+        android:layout_width="289dp"
+        android:layout_height="57dp"
+        android:backgroundTint="@android:color/darker_gray"
+        android:ems="10"
+        android:inputType="textLongMessage"
+        android:text="Enter description"
+        android:textColor="@color/grey"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.848" />
+
+    <TextView
+        android:id="@+id/textView_exampleIssue_add"
+        android:layout_width="245dp"
+        android:layout_height="22dp"
+        android:layout_marginTop="4dp"
+        android:text="(i.e. U-Turn Sign is knocked over)"
+        app:layout_constraintBottom_toTopOf="@+id/textEdit_description_add"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textEdit_issue_add"
+        app:layout_constraintVertical_bias="0.0"
+        android:textColor="@color/grey"/>
+
+    <TextView
+        android:id="@+id/textView_exampleDesc_add2"
+        android:layout_width="245dp"
+        android:layout_height="22dp"
+        android:text="(i.e. A yellow car hit the sign and...)"
+        android:textColor="@color/grey"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.897" />
+
+    <Button
+        android:id="@+id/button_submit_add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        app:backgroundTint="@color/dark_green"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.473"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.976" />
+
+    <ImageView
+        android:id="@+id/imageView_allMap_add"
+        android:layout_width="351dp"
+        android:layout_height="346dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.083"
+        ctc:srcCompat="@drawable/iir_add_allmap" />
+
+    <!--?xml version="1.0" encoding="utf-8"?-->
+
+</androidx.constraintlayout.widget.ConstraintLayout>
